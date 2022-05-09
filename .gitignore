@@ -1,0 +1,10 @@
+*
+!src
+!src/**
+!tests
+!tests/**
+!ConsoleClient
+!ConsoleClient/**
+!CMakeLists.txt
+!Config.cmake.in
+!.gitignore

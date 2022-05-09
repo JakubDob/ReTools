@@ -1,0 +1,77 @@
+cmake_minimum_required(VERSION 3.22.1)
+
+target_sources(
+    REutils
+    PRIVATE
+    code_memory_map.cpp
+    console.cpp
+    console_wrapper.cpp
+    disassembler.cpp
+    dispatcher.cpp
+    fps_counter.cpp
+    key_toggle.cpp
+    logger.cpp
+    memory_patcher.cpp
+    network_packet.cpp
+    print_buffer.cpp
+    scanner.cpp
+    stack_walk.cpp
+    threaded_function.cpp
+    types.cpp
+    winapi_helper.cpp
+
+    asm_emulator.h
+    code_memory_map.h
+    console.h
+    console_wrapper.h
+    constants.h
+    dispatcher.h
+    dissasembler.h
+    enum_class_converter.h
+    fps_counter.h
+    hook_function.h
+    hook_function.hpp
+    key_toggle.h
+    logger.h
+    macros.h
+    memory_patcher.h
+    multilvlptr.h
+    network_packet.h
+    print_buffer.h
+    scanner.h
+    stack_walk.h
+    threaded_function.h
+    types.h
+    utils.h
+    winapi_helper.h    
+)
+
+install(
+    FILES
+    asm_emulator.h
+    code_memory_map.h
+    console.h
+    console_wrapper.h
+    constants.h
+    dispatcher.h
+    dissasembler.h
+    enum_class_converter.h
+    fps_counter.h
+    hook_function.h
+    hook_function.hpp
+    key_toggle.h
+    logger.h
+    macros.h
+    memory_patcher.h
+    multilvlptr.h
+    network_packet.h
+    print_buffer.h
+    scanner.h
+    stack_walk.h
+    threaded_function.h
+    types.h
+    utils.h
+    winapi_helper.h
+
+    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/REutils
+)

@@ -1,0 +1,5 @@
+@PACKAGE_INIT@
+include(CMakeFindDependencyMacro)
+find_dependency(Zydis REQUIRED)
+include("${CMAKE_CURRENT_LIST_DIR}/REutilsTargets.cmake")
+check_required_components(REutils)
